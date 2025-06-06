@@ -120,16 +120,3 @@ public static class AIModelLoader {
         return null;
     }
 }
-
-// Placeholder for BlockEntry class (assumed to be defined elsewhere)
-public class BlockEntry {
-    public uint VirtualAddress { get; set; }
-    public uint DecompressedSize { get; set; }
-    public byte[] Data { get; set; }
-    public string BlockType { get; set; }
-}
-
-// Placeholder for FixSNALoader class (assumed to be defined elsewhere)
-public static class FixSNALoader {
-    public static BlockEntry[] LoadedBlocks { get; set; }
-}

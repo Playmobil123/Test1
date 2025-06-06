@@ -85,7 +85,7 @@ public static class DsgMemLoader {
         for (int i = 0; i < dsgVarCount; i++) {
             string typeStr = mem.varInfos[i].type.ToString();
             string valueStr = mem.variables[i].value?.ToString() ?? "null";
-            if (mem.varInfos[i].type == DsgVarType.Perso) {
+            if (mem.varInfos[i].type == DsgVarType.PersoRef) {
                 valueStr = mem.variables[i].value?.ToString() ?? "null";
             }
             Console.WriteLine($"  [{i}] → Type={typeStr}, Value={valueStr}");
